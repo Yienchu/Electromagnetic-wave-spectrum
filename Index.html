@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Project 1 for Science 10</title>
+    
+    <link rel="stylesheet" href="bleb.css" />
+
+</head>
+<body> 
+  <header>
+    <h1>Electromagnetic Wave Spectrum</h1>
+    <nav>
+      <ul>
+        <li><button class="nav-button" onclick="changeRegion('radio')">Radio Waves</button></li>
+        <li><button class="nav-button" onclick="changeRegion('microwave')">Microwaves</button></li>
+        <li><button class="nav-button" onclick="changeRegion('infrared')">Infrared</button></li>
+        <li><button class="nav-button" onclick="changeRegion('visible')">Visible Light</button></li>
+        <li><button class="nav-button" onclick="changeRegion('ultraviolet')">Ultraviolet</button></li>
+        <li><button class="nav-button" onclick="changeRegion('xray')">X-rays</button></li>
+        <li><button class="nav-button" onclick="changeRegion('gamma')">Gamma Rays</button></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="lesson-content">
+      <h2>Learn About Electromagnetic Waves</h2>
+      <img id="region-image" src=" " alt="Region Image" style="max-width: 100%; margin-top: 10px;" />
+
+
+      <p id="region-title">Select a wave region to start learning.</p>
+      <div id="region-info">
+        <p id="region-description"></p>
+        <button id="virtual-experiment-button">Start Virtual Experiment</button>
+        <div id="virtual-experiment"></div>
+      </div>
+    </section>
+
+    
+    <section id="real-world-examples">
+      <h2>Real-World Applications</h2>  
+      <ul id="examples"></ul>
+
+      <div id="example-details" class="hidden">
+        <h3 id="example-title"></h3>
+        <p id="example-description"></p>
+        <button onclick="closeDetails()">Close</button>
+      </div>
+    </section>
+    
+  </main>
+
+
+    <script src="cici.js"></script>
+</body>
+
+
+
+
+</html>
+
+
